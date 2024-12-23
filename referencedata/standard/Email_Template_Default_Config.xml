@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><ob:Openbravo xmlns:ob="http://www.openbravo.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EmailTemplate id="D894EFE020E640AC99CE16C711D10088" identifier="Openbravo Orisha - Forgotten Password">
+    <id>D894EFE020E640AC99CE16C711D10088</id>
+    <active>true</active>
+    <pocDocumentType xsi:nil="true"/>
+    <subject>Openbravo Orisha - Forgotten Password</subject>
+    <body>&lt;#if user.firstName??&gt;
+Hello ${user.firstName}
+&lt;#else&gt;
+Hello ${user.username}
+&lt;/#if&gt;
+
+We've received a request to regenerate your password for your Openbravo - Orisha Retail Chain Account.
+
+Click on the link below to create your new password.
+${change_password_url}
+
+If you have not been requesting a new password, please contact your IT system to alert them about this request.
+
+Remember that the link will be valid for ${reset_password_timeout} minutes.
+
+Best Regards</body>
+    <default>false</default>
+    <language id="192" entity-name="ADLanguage" identifier="English (USA)"/>
+    <emailType id="5209BE52755B49C582F034E9B98B3F33" entity-name="EmailType" identifier="Forgotten Password"/>
+  </EmailTemplate>
+</ob:Openbravo>
